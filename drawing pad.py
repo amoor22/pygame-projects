@@ -101,7 +101,7 @@ def export_image():
         for col in range(block_num):
             data[row][col] = colors[grid[row][col]]
     img = Image.fromarray(data, "RGB")
-    img.save(r"C:\Users\abdul\OneDrive\Desktop\ass.png")
+    img.save(r"Pygame/export.png")
     # Figure a way to resize without losing quality
     # Preferably a bigger canvas with a bigger brush
     def send_to_clipboard(clip_type, data):
@@ -110,7 +110,7 @@ def export_image():
         win32clipboard.SetClipboardData(clip_type, data)
         win32clipboard.CloseClipboard()
 
-    filepath = r"C:\Users\abdul\OneDrive\Desktop\ass.png"
+    filepath = r"Pygame/export.png"
     image_ = Image.open(filepath)
 
     output = BytesIO()
