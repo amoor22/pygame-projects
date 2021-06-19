@@ -154,12 +154,12 @@ def breadth(start):
 put_mines2(board, 15)
 breadth([0, 0])
 print(empty)
-def ass():
+def empty():
     for i in empty:
         row, col = i
         board[row][col] = 'x'
 
 board_print(board)
-ass()
+empty()
 print()
 board_print(board)
